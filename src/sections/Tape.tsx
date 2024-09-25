@@ -29,7 +29,7 @@ export const TapeSection = () => {
         .map((_, i) => (
           <div key={i} className="flex shrink-0 animate-marquee flex-row justify-around gap-16">
             {icons.map(({ name, Icon }, index) => (
-                <div className="md:h-20 md:w-20 h-10 w-10">
+                <div key={name} className="md:h-20 md:w-20 h-10 w-10">
                   <Icon className="h-full w-full" />
                 </div>
               

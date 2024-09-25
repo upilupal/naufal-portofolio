@@ -33,7 +33,7 @@ export const HeroSection = () => {
         </div>
         <div className="max-w-lg mx-auto mt-4 md:mt-6">
           <h1 className="font-serif text-3xl md:text-5xl text-center tracking-wide">Building Exceptional User Experiences</h1>
-          <p className="mt-2 md:mt-3 text-center text-white/60 md:text-base">I specialize in transforming designs into functional, high-performance web applications. Let's discuss your next project.</p>
+          <p className="mt-2 md:mt-3 text-center text-white/60 md:text-base">I specialize in transforming designs into functional, high-performance web applications. Let&apos;s discuss your next project.</p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-6 md:mt-8 gap-3 md:gap-4">
           <button onClick={scrollToProjects} className="inline-flex items-center gap-2 border border-white/15 px-5 h-10 md:px-6 md:h-12 rounded-xl z-10">
@@ -47,7 +47,7 @@ export const HeroSection = () => {
             className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-10 md:h-12 px-5 md:px-6 rounded-xl z-10 text-sm md:text-base"
           >
             <span>👋</span>
-            <span className="font-semibold">Let's connect</span>
+            <span className="font-semibold">Let&apos;s connect</span>
           </Link>
         </div>
       </div>

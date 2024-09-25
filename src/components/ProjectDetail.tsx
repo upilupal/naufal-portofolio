@@ -29,7 +29,7 @@ const ProjectDetail = ({ project }: { project: ProjectDetailProps }) => {
         <span className="mx-2">&bull;</span>
         <span>{project.year}</span>
       </div>
-      <div className="mt-8 flex justify-center bg-slate-600 rounded-lg pt-10">
+      <div className="mt-8 flex justify-center bg-slate-600 rounded-lg pt-10 px-5">
         <Image src={project.image} alt={project.title} width={675} height={200} className="rounded-lg" />
       </div>
       <div className="">

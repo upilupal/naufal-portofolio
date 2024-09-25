@@ -32,9 +32,9 @@ export const HeroSection = () => {
           </div>
         </div>
         <div className="mx-auto mt-4 md:mt-6">
-          <h1 className="font-serif text-3xl md:text-5xl text-center tracking-wide">Naufal Hanif Cipta Darmara</h1>
+          <h1 className="font-serif text-2xl md:text-5xl text-center tracking-wide">Naufal Hanif Cipta Darmara</h1>
           <div className="max-w-lg mt-4 md:mt-6 mx-auto">
-          <h1 className="font-serif text-3xl text-center tracking-wide">Fullstack Web Developer</h1>
+          <h1 className="font-serif text-xl md:text-3xl text-center tracking-wide">Fullstack Web Developer</h1>
           <p className="mt-2 md:mt-3 text-center text-white/60 md:text-base">I specialize in transforming designs into functional, high-performance web applications. Let&apos;s discuss your next project.</p>
 
           </div>

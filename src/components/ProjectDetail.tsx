@@ -1,5 +1,7 @@
+'use client'
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { FiArrowLeft, FiArrowUpRight } from "react-icons/fi";
 
 type ProjectDetailProps = {
@@ -17,12 +19,26 @@ type stackProps = {
 };
 
 const ProjectDetail = ({ project }: { project: ProjectDetailProps }) => {
+  const router = useRouter()
+  const handleBackClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    router.push('/');
+    
+    // Use setTimeout to ensure the navigation has completed before scrolling
+    setTimeout(() => {
+      const projectsSection = document.getElementById('projectsSection');
+      if (projectsSection) {
+        projectsSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+  };
+
   return (
     <div className="container mx-auto px-4 py-12">
-      <Link href="/#projectsSection" className="inline-flex items-center text-white hover:text-white/80 transition-colors">
+      <a href="/" onClick={handleBackClick} className="inline-flex items-center text-white hover:text-white/80 transition-colors">
         <FiArrowLeft className="mr-2" />
         Back to projects
-      </Link>
+      </a>
       <h1 className="font-serif text-4xl md:text-6xl mt-8">{project.title}</h1>
       <div className="mt-4 flex items-center text-white/60">
         <span>{project.month}</span>

@@ -11,7 +11,7 @@ export const ContactSection = () => {
             <p className="text-sm md:text-base mt-2">Ready to bring your next project to life? Let&apos;s connect and discuss how I can help you achieve your goals.</p>
           </div>
           <div className="">
-            <Link href="mailto:sofiazahroh2018@gmail.com" target="_blank" rel="noopener noreferer" className="text-white bg-gray-900 inline-flex gap-2 items-center px-6 h-12 rounded-xl w-max border border-gray-900">
+            <Link href="mailto:naufalhanif891@gmail.com" target="_blank" rel="noopener noreferer" className="text-white bg-gray-900 inline-flex gap-2 items-center px-6 h-12 rounded-xl w-max border border-gray-900">
               <span className="font-semibold">Contact Me</span>
               <FiArrowUpRight size={18} />
             </Link>
